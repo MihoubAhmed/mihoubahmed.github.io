@@ -1,4 +1,4 @@
-# FooBarQix
+# FooBarQix   [Live Demo](https://mihoubahmed.github.io/)
 You should implements a function String compute(String) which implements the following rules.
 
 # Step 1

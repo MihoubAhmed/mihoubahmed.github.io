@@ -6,7 +6,7 @@ window.fbq = function fbq(value) {
     }
 	
 	
-
+	return value;
   
   
  

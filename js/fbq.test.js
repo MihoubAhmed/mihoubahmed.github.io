@@ -24,6 +24,13 @@ QUnit.test( "fbq('33')", function( assert ) {
   assert.ok( fbq('33') == "FooFooFoo", "FooFooFoo (divisible by 3, contains two 3)" );
 });
 
+QUnit.test( "fbq('100')", function( assert ) {
+  assert.ok( fbq('100') == "1**", "1** each 0 must be replace par char *" );
+});
+QUnit.test( "fbq('101')", function( assert ) {
+  assert.ok( fbq('101') == "1*1", "1*1 each 0 must be replace par char *" );
+});
+
 
 
 

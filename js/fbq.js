@@ -21,6 +21,6 @@ window.fbq = function fbq(value) {
         }
     });
 	
-	  return result.length === 0 ? value.toString() : result;
+	  return result.length === 0 ? value.replace(/0/g, '*') : result;
 	
 }

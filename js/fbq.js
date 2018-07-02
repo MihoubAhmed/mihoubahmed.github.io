@@ -7,6 +7,17 @@ window.fbq = function fbq(value) {
         return fbq(String(value));
     }
 	
-	return value;
+	var result='';
+	
+	if (value % 3 === 0) {
+        result = "Foo";
+    }
+    if (value === "3") {
+       result += "Foo";
+    }
+	
+	
+	
+	  return result.length === 0 ? value.toString() : result;
 	
 }

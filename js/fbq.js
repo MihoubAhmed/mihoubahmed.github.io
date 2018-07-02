@@ -10,17 +10,19 @@ window.fbq = function fbq(value) {
 	var result='';
 	var isDivisable=false;
 	var isContain = false;
-	if (value % 3 === 0) {
-        result = "Foo";isDivisable=true;
-    }
+
+	var Dictionary = new Map([
+        ["3", "Foo"],
+        ["5", "Bar"],
+        ["7", "Qix"]
+    ]);
 	
-	if (value % 5 === 0) {
-        result += "Bar";isDivisable=true;
-    }
-	
-	if (value % 7 === 0) {
-        result += "Qix";isDivisable=true;
-    }
+	Dictionary.forEach(function (val, number) {
+        if (value % number === 0) {
+            result += val;
+			isDivisable=true;
+        }
+    });
 	
 	
 	if ((value.indexOf('3') >-1)||(value.indexOf('5') >-1)|| (value.indexOf('7') >-1) ){

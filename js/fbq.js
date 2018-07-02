@@ -1,3 +1,5 @@
+
+const ch= ' \u21D2 '; 
 window.fbq = function fbq(value) {
     "use strict";
 	
@@ -5,11 +7,6 @@ window.fbq = function fbq(value) {
         return fbq(String(value));
     }
 	
-	
 	return value;
-  
-  
- 
-	
 	
 }
